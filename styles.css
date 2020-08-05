@@ -1,31 +1,73 @@
 body {
    padding: 0px;
    margin: 0px;
-   background-image: url(pics/light.svg);
+   background-image: linear-gradient(#c6c4c050,#c6c4c050), url(pics/light.svg);
 }
 nav {
    background-color: #c6c4c000;
    width: 100%;
    padding: 10px;
    margin-top: 15px;
+   text-align: center;
 }
 
 .navbutton {
-   font-size: 30px;
+   font-size: 28px;
+   font-weight: 500;
    font-family: 'Lexend Deca';
    padding-bottom: 15px;
-   padding-top: 13px;
-   padding-bottom: 15px;
-   padding-left: 18px;
-   padding-right: 18px;
+   padding-top: 15px;
+   padding-bottom: 17px;
+   padding-left: 20px;
+   padding-right: 20px;
    color: #454033;
    text-decoration: none;
    border: none !important;
    border-radius: 15px;
    background-color: #c6c4c050;
-
+   margin-right: 8%;
+   margin-left: 8%;
+   background: linear-gradient(270deg, #b6a79870, #c0c0c060);
+   background-size: 400% 400%;
+   animation: background 5s ease infinite;
 }
 
-.navbutton:hover {
-   color: #454033;
+@media screen and (max-aspect-ratio: 4/3) {
+   .navbutton {
+      margin-right: 4%;
+      margin-left: 4%;
+   }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+   .navbutton {
+      margin-right: 2%;
+      margin-left: 2%;
+   }
+}
+
+@media screen and (max-aspect-ratio: 3/4) {
+   .navbutton {
+      margin-right: 2%;
+      margin-left: 2%;
+      font-size: 20px;
+   }
+}
+
+@media screen and (max-aspect-ratio: 3/5) {
+   .navbutton {
+      margin-right: 2%;
+      margin-left: 2%;
+      font-size: 16px;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+}
+
+@keyframes background {
+   0%{background-position:0% 50%}
+   50%{background-position:100% 50%}
+   100%{background-position:0% 50%}
 }
