@@ -57,6 +57,7 @@ nav {
    width: 20%;
    display: flex;
    backdrop-filter: blur(50px);
+   -webkit-backdrop-filter: blur(50px);
 }
 
 #blurplecard {
