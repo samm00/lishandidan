@@ -1,7 +1,9 @@
 body {
    padding: 0px;
    margin: 0px;
+   color: #454033;
    background-image: linear-gradient(#c6c4c060,#c6c4c060), url(pics/light.svg);
+   font-family: 'Lexend Deca';
 }
 nav {
    background-color: #c6c4c000;
@@ -14,7 +16,6 @@ nav {
 .navbutton {
    font-size: 28px;
    font-weight: 500;
-   font-family: 'Lexend Deca';
    padding-bottom: 15px;
    padding-top: 15px;
    padding-bottom: 17px;
@@ -23,7 +24,7 @@ nav {
    color: #454033;
    text-decoration: none;
    border: none !important;
-   border-radius: 15px;
+   border-radius: 12px;
    background-color: #c6c4c050;
    margin-right: 8%;
    margin-left: 8%;
@@ -31,6 +32,82 @@ nav {
    background: linear-gradient(270deg, #b6a79870, #c0c0c060);
    background-size: 400% 400%;
    animation: background 5s ease infinite;
+}
+
+@keyframes background {
+   0%{background-position:0% 50%}
+   50%{background-position:100% 50%}
+   100%{background-position:0% 50%}
+}
+
+ul, li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.row {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.card {
+   background-color: #c6c4c060;
+   border-radius: 12px;
+   margin: 5%;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   width: 30%;
+   display: flex;
+}
+
+#blurplecard {
+   background: linear-gradient(270deg, #9040c070, #4090c070);
+   background-size: 400% 400%;
+   animation: background 6s ease infinite;
+}
+
+#rorangecard {
+   background: linear-gradient(270deg, #c0704070, #c0406070);
+   background-size: 400% 400%;
+   animation: background 5s ease infinite;
+}
+
+.cardcontent {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.cardcontent p {
+   flex: 1 0 auto;
+}
+
+.title {
+   font-size: 20px;
+}
+
+.subsection {
+   display: table-cell;
+}
+
+.subtitle {
+   font-size: 16px;
+}
+
+.cardbutton {
+   margin-left: 90%;
+   background-color: #c6c4c080;
+   border-radius: 5px;
+   border: none;
+   width: fit-content;
+   height: fit-content;
+   padding: 5px;
+   padding-left: 7px;
+   padding-right: 7px;
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
@@ -65,10 +142,4 @@ nav {
       padding-left: 15px;
       padding-right: 15px;
    }
-}
-
-@keyframes background {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
 }
