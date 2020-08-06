@@ -2,23 +2,22 @@ body {
    padding: 0px;
    margin: 0px;
    color: #454033;
-   background-image: linear-gradient(#c6c4c060,#c6c4c060), url(pics/light.svg);
+   background-image: linear-gradient(#c6b29050,#c6b29050), url(pics/light.svg);
    font-family: 'Lexend Deca';
 }
 nav {
    background-color: #c6c4c000;
    width: 100%;
    padding: 10px;
-   margin-top: 3%;
+   margin-top: 2%;
    text-align: center;
 }
 
 .navbutton {
-   font-size: 28px;
+   font-size: 24px;
    font-weight: 500;
+   padding-top: 14px;
    padding-bottom: 15px;
-   padding-top: 15px;
-   padding-bottom: 17px;
    padding-left: 20px;
    padding-right: 20px;
    color: #454033;
@@ -26,8 +25,8 @@ nav {
    border: none !important;
    border-radius: 12px;
    background-color: #c6c4c050;
-   margin-right: 8%;
-   margin-left: 8%;
+   margin-right: 4%;
+   margin-left: 4%;
    
    background: linear-gradient(270deg, #b6a79870, #c0c0c060);
    background-size: 400% 400%;
@@ -40,40 +39,60 @@ nav {
    100%{background-position:0% 50%}
 }
 
-ul, li {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-}
-
 .row {
    display: flex;
-   align-items: center;
    justify-content: center;
    flex-wrap: wrap;
+   list-style: none;
+   margin-top: 5%;
 }
 
 .card {
    background-color: #c6c4c060;
    border-radius: 12px;
-   margin: 5%;
+   margin: 3%;
    padding-left: 20px;
    padding-right: 20px;
    padding-bottom: 20px;
-   width: 30%;
+   width: 20%;
    display: flex;
+   backdrop-filter: blur(50px);
 }
 
 #blurplecard {
-   background: linear-gradient(270deg, #9040c070, #4090c070);
+   background: linear-gradient(270deg, #8040c070, #6060c070);
    background-size: 400% 400%;
    animation: background 6s ease infinite;
 }
 
 #rorangecard {
-   background: linear-gradient(270deg, #c0704070, #c0406070);
+   background: linear-gradient(270deg, #c0604070, #c0405070);
    background-size: 400% 400%;
-   animation: background 5s ease infinite;
+   animation: background 6s ease infinite;
+}
+
+#orellocard {
+   background: linear-gradient(270deg, #c0aa3070, #c0904070);
+   background-size: 400% 400%;
+   animation: background 6s ease infinite;
+}
+
+#bleencard {
+   background: linear-gradient(270deg, #40a06070, #90c04070);
+   background-size: 400% 400%;
+   animation: background 6s ease infinite;
+}
+
+#browncard {
+   background: linear-gradient(270deg, #a66b3070, #a07b4070);
+   background-size: 400% 400%;
+   animation: background 6s ease infinite;
+}
+
+#greycard {
+   background: linear-gradient(270deg, #50505070, #80808070);
+   background-size: 400% 400%;
+   animation: background 6s ease infinite;
 }
 
 .cardcontent {
@@ -90,16 +109,11 @@ ul, li {
    font-size: 20px;
 }
 
-.subsection {
-   display: table-cell;
-}
-
 .subtitle {
    font-size: 16px;
 }
 
 .cardbutton {
-   margin-left: 90%;
    background-color: #c6c4c080;
    border-radius: 5px;
    border: none;
@@ -108,26 +122,27 @@ ul, li {
    padding: 5px;
    padding-left: 7px;
    padding-right: 7px;
+   position: absolute;
+   bottom: 18px;
+   right: 18px;
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
    .navbutton {
-      margin-right: 4%;
-      margin-left: 4%;
+      margin-right: 3%;
+      margin-left: 3%;
+   }
+}
+
+@media screen and (max-aspect-ratio: 6/5) {
+   .navbutton {
+      margin-right: 2%;
+      margin-left: 2%;
    }
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
    .navbutton {
-      margin-right: 2%;
-      margin-left: 2%;
-   }
-}
-
-@media screen and (max-aspect-ratio: 3/4) {
-   .navbutton {
-      margin-right: 2%;
-      margin-left: 2%;
       font-size: 20px;
    }
 }
