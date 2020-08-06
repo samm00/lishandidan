@@ -1,8 +1,8 @@
 body {
    padding: 0px;
    margin: 0px;
-   color: #454033;
-   background-image: linear-gradient(#c6b29050,#c6b29050), url(pics/light.svg);
+   color: #c5c0b3;
+   background-image: linear-gradient(#76422020,#76422020), url(pics/dark.svg);
    font-family: 'Lexend Deca';
 }
 nav {
@@ -20,7 +20,7 @@ nav {
    padding-bottom: 15px;
    padding-left: 20px;
    padding-right: 20px;
-   color: #454033;
+   color: #c5c0b3;
    text-decoration: none;
    border: none !important;
    border-radius: 12px;
@@ -28,7 +28,7 @@ nav {
    margin-right: 4%;
    margin-left: 4%;
    
-   background: linear-gradient(270deg, #b6a79870, #c0c0c060);
+   background: linear-gradient(270deg, #70635a60, #70707050);
    background-size: 400% 400%;
    animation: background 5s ease infinite;
 }
@@ -115,7 +115,7 @@ nav {
 }
 
 .cardbutton {
-   background-color: #c6c4c080;
+   background-color: #76747080;
    border-radius: 5px;
    border: none;
    width: fit-content;
@@ -126,18 +126,6 @@ nav {
    position: absolute;
    bottom: 18px;
    right: 18px;
-}
-
-.theme-toggle {
-   bottom: 20px;
-   right: 20px;
-   position: absolute;
-   background-color: #c6c4c080;
-   border: none;
-   border-radius: 10px;
-   width: fit-content;
-   height: fit-content;
-   padding: 10px;
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
@@ -169,20 +157,5 @@ nav {
       padding-bottom: 12px;
       padding-left: 15px;
       padding-right: 15px;
-   }
-}
-
-@media (prefers-color-scheme: dark) {
-   body {
-      color: #c5c0b3;
-      background-image: linear-gradient(#76422020,#76422020), url(pics/dark.svg);
-   }
-
-   .navbutton {
-      background: linear-gradient(270deg, #70635a60, #70707050);
-   }
-
-   .cardbutton {
-      background-color: #76747080;
    }
 }
