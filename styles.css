@@ -20,7 +20,7 @@ nav {
    padding-bottom: 15px;
    padding-left: 20px;
    padding-right: 20px;
-   color: #454033;
+   color: inherit;
    text-decoration: none;
    border: none !important;
    border-radius: 12px;
@@ -175,7 +175,7 @@ nav {
 @media (prefers-color-scheme: dark) {
    body {
       color: #c5c0b3;
-      background-image: linear-gradient(#76422020,#76422020), url(pics/dark.svg);
+      background-image: linear-gradient(#76422015,#76422015), url(pics/dark.svg);
    }
 
    .navbutton {
