@@ -23,3 +23,12 @@ dark.addEventListener("click", function() {
    document.getElementsByClassName("navButton").style.background = "linear-gradient(270deg, #b6a79870, #c0c0c060)";
    document.getElementsByClassName("cardbutton").style.backgroundColor = "#c6c4c080";
 });
+
+function goPython(){
+   $.ajax({
+     url: "api.py",
+    context: document.body
+   }).done(function() {
+    alert('finished python script');;
+   });
+}
